@@ -1,0 +1,170 @@
+@font-face {
+font-family: "Open Sans";
+src: url("/sources/fonts/OpenSans-Regular.woff2") format("woff2");
+font-weight: 400;
+font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("/sources/fonts/OpenSans-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", serif;
+}
+
+.header {
+    position: relative;
+    padding: 45px 195px 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/sources/img/football_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -2;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0a0e34;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.logo-text{
+    width: 191px;
+    height: 52px;
+}
+
+h1 {
+    font-size: 90px;
+    font-weight: bold;
+    letter-spacing: 4.5px;
+    color: #ffffff;
+    margin-top: 295px;
+    margin-bottom: 222px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.button {
+    width: 311px;
+    height: 77px;
+    border-radius: 24px;
+    background-color: #5e42b0;
+}
+
+.button-text {
+    /* width: 145px; */
+    text-transform: uppercase;
+    font-size: 14px;
+    /* line-height: 2.46; */
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.os-name {
+    font-weight: bold;
+}
+
+.apple-button {
+    background-image: url("/sources/svg/apple_logo_black.svg");
+    background-repeat: no-repeat;
+    background-size: 40px 48px;
+    background-position: 39px 11px;
+    padding-left: 106px;
+    
+}
+
+.android-button {
+    background-image: url("/sources/svg/google-play.svg");
+    background-repeat: no-repeat;
+    background-size: 40px 50px;
+    background-position: 57px 14px;
+    padding-left: 126px;
+    margin-left: 50px;
+}
+
+/* main */
+
+.items-athlets {
+    background-image: url();
+}
+
+/* footer */
+
+.footer {
+    position: relative;
+    padding: 229px 528px 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/sources/img/game_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -2;
+}
+
+.footer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0a0e34;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.slogan {
+    margin-bottom: 151px;
+    display: flex;
+}
+
+.logo {
+        width: 130px;
+        height: 137px;
+        background-color: #ffffff;
+}
+
+.footer-text {
+    text-transform: uppercase;
+}
+
+.header-title {
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.header-subtitle {
+    font-size: 30px;
+    text-align: left;
+    color: #a496ca;
+}
+
+.bottom-logo {
+    margin-top: 262px;
+}
