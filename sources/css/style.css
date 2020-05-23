@@ -17,6 +17,8 @@ font-style: normal;
     padding: 0;
 }
 
+/* body design */
+
 body {
     font-family: "Open Sans", serif;
     max-width: 1920px;
@@ -26,7 +28,7 @@ body {
 
 .header {
     position: relative;
-    padding: 4% 17.4% 9.7%;
+    padding: 4rem 2rem 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,33 +52,31 @@ body {
 }
 
 .logo-text{
-    width: 13.6em;
-    height: 3.7em;
+    width: 17rem;
 }
-
 
 .header-slogan {
     align-items: left;
-    font-size: 90px;
+    font-size: 4rem;
     font-weight: bold;
-    letter-spacing: 4.5px;
+    letter-spacing: 0.3rem;
     color: #ffffff;
+    margin-top: 17rem;
+    margin-bottom: 11rem;
 }
 
-.first-line {
-    margin-top: 3.2em;
+/* .first-line {
     margin-right: auto;
-}
+} */
 
 .second-line {
-    margin-bottom: 2.5em;
-    margin-left: auto;
+    margin-top: 6%;
+    margin-left: 15%;
 }
 
 .buttons {
     display: flex;
-    justify-content: space-around;
-    background-color: chartreuse;
+    flex-direction: column;
     width: 100%;
 
 }
@@ -84,9 +84,9 @@ body {
 .button {
     display: flex;
     align-items: center;
-    padding: 0.9em 2.8em 1em;
-    width: 22em;
-    border-radius: 3.1em;
+    padding: 1rem 10rem ;
+    width: 100%;
+    border-radius: 3rem;
     background-color: #5e42b0;
     text-transform: uppercase;
     color: white;
@@ -96,14 +96,10 @@ body {
 
 .button::before {
     content: "";
-    /* display: flex; */
-    /* top: 0.8em;
-    left: 2.8em; */
     background-repeat: no-repeat;
-    /* background-size: 3em 3.5em;; */
-    width: 3.0em;
-    height: 3.4em;
-    margin-right: 1.9em;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
 }
 
 .apple-button::before {
@@ -114,29 +110,30 @@ body {
     background-image: url("/sources/svg/google-play_white.svg");
 }
 
+.android-button {
+    margin-top: 2rem;
+}
+
+.button-text {
+    font-size: 1rem;
+    letter-spacing: 0.4px;
+
+}
+
 .os-name {
     font-weight: bold;
 }
 
-.android-button {
-    /* margin-left: 3.6em; */
-}
-
-@media (min-width: 961px) { 
-
-    .button {
-        font-size: 14px;
+@media (max-width: 640px) { 
+    html {
+        font-size: 50%;
     }
 }
     
 
 /* header 768 */
 
-@media (min-width: 641px) and (max-width: 960px) {
-
-    .buttons {
-        /* width: 100%; */
-    }
+/* @media (min-width: 641px) and (max-width: 960px) {
 
     .button {
         font-size: 14px;
@@ -145,11 +142,11 @@ body {
     .header {
         padding: 4.5% 6.8% 10.7%;
     }
-}
+} */
 
 /* header 320 */
 
-@media (max-width: 640px) {
+/* @media (max-width: 640px) {
     .header {
         padding: 2.4em 1.4em 6em;
         font-size: 8px;
@@ -178,7 +175,7 @@ body {
     
 
 
-}
+} */
 
 /* main */
 
@@ -420,9 +417,9 @@ body {
 
 /* footer */
 
-/* .footer {
+.footer {
     position: relative;
-    padding: 229px 0 52px;
+    padding: 12rem 2rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -446,43 +443,48 @@ body {
 }
 
 .slogan {
-    margin-bottom: 151px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .logo {
-    width: 130px;
-    height: 137px;
+    width: 7rem;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 70%;
-    border-radius: 24px;
-    background: linear-gradient(#a496ca, #5e42b0);
-    margin-right: 37px;
-    padding: 20px;
+    border-radius: 2rem;
+    background-color:#5e42b0;
+    padding: 2rem 1.5rem;
 }
 
 .footer-text {
     text-transform: uppercase;
+    margin-top: 7rem;
+    margin-bottom: 9rem;
 }
 
 .footer-header-title {
-    font-size: 80px;
+    width: 100%;
+    font-size: 4rem;
     font-weight: bold;
-    letter-spacing: 4px;
-    text-align: left;
+    letter-spacing: 0.5rem;
+    text-align: center;
     color: #ffffff;
-    line-height: 80px;
+
+    /* line-height: 80px; */
 }
 
 .footer-header-subtitle {
-    font-size: 30px;
+    font-size: 1.8rem;
     text-align: left;
     color: #a496ca;
+    letter-spacing: 0.2rem;
+    text-align: center;
+
+
 }
 
 .footer-bottom-logo {
-    margin-top: 262px;
-} */
+    margin-top: 10rem;
+}
